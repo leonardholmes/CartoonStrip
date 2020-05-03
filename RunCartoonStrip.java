@@ -3,9 +3,9 @@
 // You may not distribute it in any other way without permission.
 
 /* Code for 13DTC Assignment Cartoon Strip
- * Name:
- * Username:
- * Email:
+ * Name:leonard
+ * Username:leonard
+ * Email:leonard.holmes@student.onslow.school.nz
  */
 
 import ecs100.*;
@@ -17,7 +17,7 @@ public class RunCartoonStrip{
         UI.addButton("Clear", UI::clearGraphics );
         UI.addButton("Tell Story", cs::tellStory );
         UI.addButton("Quit", UI::quit );
-        UI.setDivider(0);       // Expand the graphics area
+        UI.setDivider(0);       // Expand the graphics area, original value 0
     }
 
 }

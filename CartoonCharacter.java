@@ -3,9 +3,9 @@
 // You may not distribute it in any other way without permission.
 
 /* Code for 13DTC Assignment Cartoon Strip
- * Name:
- * Username:
- * Email:
+ * Name:leonard
+ * Username:leonard
+ * Email:leonard.holmes@student.onslow.school.nz
  */
 
 import ecs100.*;
@@ -33,7 +33,7 @@ public class CartoonCharacter {
     private int characterHeight = 100;
     private int characterWidth = 70;
 
-    private int wordsWidth = 150;
+    private int wordsWidth = 200;   //original value 150
     private int wordsHeight = 35;
 
     /** Constructor requires the coordinates (left, top) of where it should be placed,
@@ -97,12 +97,12 @@ public class CartoonCharacter {
             boxX += 15 ;
         else
             boxX +=  this.characterWidth  - 15 - this.wordsWidth;
-
+        //this only allows strings of about 28 characters   
         UI.eraseRect(boxX, boxY, this.wordsWidth, this.wordsHeight);
         UI.drawRect(boxX, boxY, this.wordsWidth, this.wordsHeight);
         UI.drawString(words, boxX + 5, boxY + this.wordsHeight/2 + 3);
 
-        UI.sleep(1000);
+        UI.sleep(1000); 
 
         UI.eraseRect(boxX, boxY, this.wordsWidth+1, this.wordsHeight+1);
     }
